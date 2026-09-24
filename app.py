@@ -2,6 +2,7 @@ import gradio as gr
 import joblib
 import numpy as np
 import json
+import os
 
 # Load saved model, scalers, and threshold
 model = joblib.load('fraud_model.pkl')
@@ -70,7 +71,7 @@ def load_legit_example():
     return [LEGIT_EXAMPLE["amount"], LEGIT_EXAMPLE["time"]] + LEGIT_EXAMPLE["v"]
 
 
-with gr.Blocks(title="Credit Card Fraud Detector", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="Credit Card Fraud Detector") as demo:
     gr.Markdown(
         """
         # Credit Card Fraud Detector
