@@ -2,7 +2,7 @@
 
 A machine learning system that detects fraudulent credit card transactions, built end-to-end: data preprocessing, class imbalance handling, model comparison, threshold optimization, and a live deployed web app.
 
-**Live demo:** 
+**Live demo:**  https://credit-card-fraud-detection-1-4tl3.onrender.com
 
 ---
 
